@@ -60,7 +60,7 @@ jobs:
     name: PHP coding standards
     runs-on: ubuntu-latest
     timeout-minutes: 20
-    if: ${{ github.repository == 'WordPress/wordpress-develop' || github.event_name == 'pull_request' }}
+    # if: ${{ github.repository == 'WordPress/wordpress-develop' || github.event_name == 'pull_request' }}
 
     steps:
       - name: Checkout repository
@@ -131,7 +131,7 @@ jobs:
     name: JavaScript coding standards
     runs-on: ubuntu-latest
     timeout-minutes: 20
-    if: ${{ github.repository == 'WordPress/wordpress-develop' || github.event_name == 'pull_request' }}
+    # if: ${{ github.repository == 'WordPress/wordpress-develop' || github.event_name == 'pull_request' }}
     env:
       PUPPETEER_SKIP_CHROMIUM_DOWNLOAD: ${{ true }}
 
